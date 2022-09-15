@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace RoleBased1.Controllers
 {
-    [Authorize]
+   /* [Authorize]*/
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -19,7 +19,7 @@ namespace RoleBased1.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+             
             return View();
         }
 

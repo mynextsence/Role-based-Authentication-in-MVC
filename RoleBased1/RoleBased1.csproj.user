@@ -2,6 +2,14 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <UseIISExpress>true</UseIISExpress>
+    <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NameOfLastUsedPublishProfile>D:\F_Fresh\CodeHub\photoshoot wala\Role-based-Authentication-in-MVC\RoleBased1\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

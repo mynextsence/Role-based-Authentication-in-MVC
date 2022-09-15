@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -180,26 +181,100 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Contentx\custom.css">
+      <DependentUpon>custom.scss</DependentUpon>
+    </Content>
+    <Content Include="Contentx\custom.min.css">
+      <DependentUpon>custom.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\1.png" />
+    <Content Include="img\2.png" />
+    <Content Include="img\2540.jpg" />
+    <Content Include="img\3.png" />
+    <Content Include="img\4.png" />
+    <Content Include="img\5.png" />
+    <Content Include="img\6.png" />
+    <Content Include="img\6LM.gif" />
+    <Content Include="img\7.png" />
+    <Content Include="img\8.png" />
+    <Content Include="img\8V9H.gif" />
+    <Content Include="img\banner.png" />
+    <Content Include="img\bg5.jpg" />
+    <Content Include="img\election.png" />
+    <Content Include="img\hording.png" />
+    <Content Include="img\product.png" />
+    <Content Include="img\pw\1.jpg" />
+    <Content Include="img\pw\2.jpg" />
+    <Content Include="img\pw\3.jpg" />
+    <Content Include="img\pw\4.jpg" />
+    <Content Include="img\pw\5.jpg" />
+    <Content Include="img\pw\6.jpg" />
+    <Content Include="img\pw\7.jpg" />
+    <Content Include="img\pw\animation.mp4" />
+    <Content Include="img\pw\b1.jpg" />
+    <Content Include="img\pw\b2.jpg" />
+    <Content Include="img\pw\b3.jpg" />
+    <Content Include="img\pw\b4.jpg" />
+    <Content Include="img\pw\b5.jpg" />
+    <Content Include="img\pw\b6.jpg" />
+    <Content Include="img\pw\babymodel.jpg" />
+    <Content Include="img\pw\chhath.jpg" />
+    <Content Include="img\pw\cor.jpg" />
+    <Content Include="img\pw\diwali.jpg" />
+    <Content Include="img\pw\durga.jpg" />
+    <Content Include="img\pw\election.jpg" />
+    <Content Include="img\pw\f1.jpg" />
+    <Content Include="img\pw\f2.jpg" />
+    <Content Include="img\pw\f3.jpg" />
+    <Content Include="img\pw\f4.jpg" />
+    <Content Include="img\pw\f5.jpg" />
+    <Content Include="img\pw\haldi.jpg" />
+    <Content Include="img\pw\hindupandit.jpg" />
+    <Content Include="img\pw\holi.jpg" />
+    <Content Include="img\pw\hording.jpg" />
+    <Content Include="img\pw\kalash.jpg" />
+    <Content Include="img\pw\meeting.jpg" />
+    <Content Include="img\pw\mendi.jpg" />
+    <Content Include="img\pw\neta.jpg" />
+    <Content Include="img\pw\newbaby.jpg" />
+    <Content Include="img\pw\onemonth.jpg" />
+    <Content Include="img\pw\p1.jpg" />
+    <Content Include="img\pw\p2.jpg" />
+    <Content Include="img\pw\p3.jpg" />
+    <Content Include="img\pw\p4.jpg" />
+    <Content Include="img\pw\p5.jpg" />
+    <Content Include="img\pw\p6.jpg" />
+    <Content Include="img\pw\p7.jpg" />
+    <Content Include="img\pw\p8.jpg" />
+    <Content Include="img\pw\pre.jpg" />
+    <Content Include="img\pw\preg.jpg" />
+    <Content Include="img\pw\print.jpg" />
+    <Content Include="img\pw\product.jpg" />
+    <Content Include="img\pw\sindur.jpg" />
+    <Content Include="img\pw\socail.jpg" />
+    <Content Include="img\pw\study.jpg" />
+    <Content Include="img\pw\tilak.jpg" />
     <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -236,6 +311,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\UserProfile.cshtml" />
     <Content Include="Views\Home\AdminPanel.cshtml" />
+    <Content Include="Views\Shared\_static\footer.cshtml" />
+    <Content Include="Views\Shared\_static\navbar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,8 +322,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
+    <Content Include="Contentx\custom.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\_index.cshtml" />
+    <Content Include="Views\Shared\index\_navtabs.cshtml" />
+    <Content Include="Views\Shared\index\_team.cshtml" />
+    <Content Include="Views\Shared\index\_contactform.cshtml" />
+    <Content Include="Views\Shared\_LayoutMobile.cshtml" />
+    <Content Include="Views\Shared\_static\chat.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
